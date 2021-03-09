@@ -1,18 +1,84 @@
-.container-fluid{
-    background-color: rgb(15, 160, 15);
-    // padding-bottom: 100%;
-    // background-size: cover;
-    background-blend-mode: multiply;
-    padding-top: 10%;
-    padding-bottom: 18%;
+html, body{
+    height: 100% !important;
+    background: #2ecc71 !important;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.box{
+    max-width: 100%;
+    border: 2px solid rgb(128, 123, 123);
+    border-radius: .5rem;
+    width: 350px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #258f51;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
 }
 
-button{
-    
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.box input[type = "text"], .box input[type = "password"]{
+    border: none;
+    background: white;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #f1c40f;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    // color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+    width: 260px;
+    border-color: #3498db;
+}
+
+.box button{
+    border: none;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #f1c40f;
+    padding: 14px 20px;
+    width: 100px;
+    outline: none;
+    // color: white;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.box button{
+    font-weight: 600;
+}
+
+.box button:hover{
+    background: #f1c40f;
+}
+
+.box p{
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.box a{
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+}
+
+.box a:hover{
+    color: #2c1fdf;
 }
