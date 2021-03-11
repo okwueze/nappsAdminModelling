@@ -1,6 +1,7 @@
-html, body{
+section{
+    background-color: #2ecc71 !important;
     height: 100% !important;
-    background: #2ecc71 !important;
+    width: 100% !important;
 }
 
 .box{
@@ -23,6 +24,7 @@ html, body{
     color: white;
     text-transform: uppercase;
     font-weight: 800;
+    font-size: xx-large;
 }
 
 .box input[type = "text"], .box input[type = "password"]{
@@ -32,7 +34,7 @@ html, body{
     margin: 20px auto;
     text-align: center;
     border: 2px solid #f1c40f;
-    padding: 14px 10px;
+    padding: 11px 7px;
     width: 200px;
     outline: none;
     // color: white;
@@ -62,6 +64,7 @@ html, body{
 
 .box button{
     font-weight: 600;
+    font-size: 1rem;
 }
 
 .box button:hover{

@@ -1,0 +1,43 @@
+.card{
+    text-align: center;
+    margin: 2rem;
+    border: 2px solid #f1c40f;
+    border-radius: .5rem;
+    box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden; // this line will make the transition and tranforming on hover effect of the 
+    // bootstrap card to remain inside its box 
+}
+
+.card-body{
+    background: #258f51;
+    border-bottom-left-radius: .45rem;
+    border-bottom-right-radius: .45rem;
+}
+
+.card-img-top{
+    transition: all .5s ease;
+   
+}
+
+.card-img-top:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.card-title{
+    font-weight: 700;
+}
+
+.card-text{
+    font-weight: 520;
+}
+
+.btn-outline-warning{
+    color: black;
+    font-weight: 600;
+    transition: all .5s ease;
+}
+
+.btn-outline-warning:hover{
+    transform: scale(1.1);
+}
