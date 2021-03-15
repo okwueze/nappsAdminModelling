@@ -85,3 +85,17 @@ section{
 .box a:hover{
     color: #2c1fdf;
 }
+
+.userDiv, .passDiv{
+    position: relative;
+}
+
+.input-icon{
+    position: absolute;
+    left: 3rem;
+    top: calc(50% - 0.5em); /* Keep icon in center of input, regardless of the input height */
+  }
+
+.input-icon:after{
+    opacity: 0;
+}

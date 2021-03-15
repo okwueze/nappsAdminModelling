@@ -1,5 +1,10 @@
+.container-fluid{
+    overflow: hidden;
+}
+
 nav{
     background:  #258f51;
+    overflow: hidden;
 }
 
 nav .container{
@@ -7,6 +12,7 @@ nav .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 
 nav ul{
@@ -52,23 +58,45 @@ nav ul li a:hover{
     }
 }
 
-// nav ul li a:after{
-//     content: '';
-//     position: absolute;
-//     left: 50%;
-//     bottom: 0;
-//     color: #f1c40f;
-//     transform: translateX(-50%) scaleX(0);
-//     -webkit-transform: translateX(-50%) scaleX(0);
-//     transform-origin: 50% 50%;
-//     width: 100%;
-//     height: 2px;
-//     background-color: rgba(255,255,255,0.9);
-//     -webkit-transition: transform 250ms;
-//     transition: transform 250ms;
-// }
+.toggleview{
+    transform: translateY(0) !important; // This line of code will make the navbar diappear so if you use
+}
 
-// nav ul li a:after{
-//     -webkit-transform: translateX(-50%) scaleX(1);
-//     transform: translateX(-50%) scaleX(1);
-// }
+// MEDIE QUERIES
+
+@media (min-width: 770px){
+    .icon-bars,
+    .img-2{
+        display: none !important;
+    }  
+}
+
+@media(max-width: 769px){
+
+    .icon-bars{
+        font-size: x-large;
+    }
+
+    .container img{
+        width: 80px;
+    }
+
+    #navbar-ul{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        width: 17rem;
+        padding-top: 1rem;
+        margin-bottom: 0;
+        padding-bottom: 1rem;
+        transition: .5s ease-in-out;
+        z-index: 99999;
+        background: #258f51;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(-200%); // As you can see down here we translated with X this is to make the 
+    } // navbar appear from the side ie from left to right but if we use Y it will apppear from top to bottom
+}

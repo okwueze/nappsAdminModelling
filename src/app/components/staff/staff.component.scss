@@ -1,0 +1,30 @@
+.table-responsive{
+    padding: 2rem;
+}
+
+button{
+    color: black;
+}
+
+thead{
+    color: white;
+    background-color: #258f51 !important;
+}
+
+thead button{
+    font-weight: 600;
+    transition: all .5s ease;
+}
+
+thead button:hover{
+    transform: scale(1.15);
+}
+
+.modal-content{
+    background: #258f51;
+}
+
+.modal h5{
+    font-weight: 700;
+    align-items: center;
+}

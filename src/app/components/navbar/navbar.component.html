@@ -4,16 +4,19 @@
             
                 <img src="../../../assets/img/napps-icon.png" alt="Napps-Logo" width="100px" >
             
-                <ul>
+                <ul id="navbar-ul" [ngClass]="{'toggleview': mobileMenu == true}">
+                    <img src="../../../assets/img/napps-icon.png" alt="Napps-Logo" class="img-2" width="100px" >
                     <li><a routerLink="/dashboard" routerLinkActive="link-active" [routerLinkActiveOptions]=
-                        "{exact:true}" href="#">Dashboard</a></li>
-                    <li><a href="#">Staff</a></li>
+                        "{exact:true}">Dashboard</a></li>
+                    <li><a routerLink="/staff" routerLinkActive="link-active" [routerLinkActiveOptions]=
+                        "{exact:true}">Staff</a></li>
                     <li><a href="#">Excos</a></li>
                     <li><a href="#">Gallery</a></li>
                     <li><a href="#">News</a></li>
                     <div class="animation start-home"></div>
                 </ul>
-            
+                <i class="fas fa-bars d-sm-block icon-bars" 
+                (click)="toggleSidebar()" id="toggle"></i>
         </div>
     </nav>
 </body> 
