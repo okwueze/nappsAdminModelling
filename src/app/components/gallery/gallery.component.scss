@@ -1,0 +1,85 @@
+.header .container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background: #258f51;
+    padding: 1rem;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.header .container h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: xx-large;
+    color: white;
+}
+
+.header .container h1, button{
+    margin: .5rem;
+}
+
+.header .container button{
+    font-weight: 600;
+    color: black;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    min-height: 100vh;
+}
+
+body.container{
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contain{
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: minmax(100px, auto);
+    margin: 40px;
+    grid-auto-flow: dense;
+    grid-gap: 20px;
+}
+
+.contain .box{
+    background: #258f51;
+    border-radius: 7.5px ;
+    padding: 20px;
+    display: grid;
+    font-size: 20px;
+    place-items: center;
+    text-align: center;
+    transition: all 0.5s ease;
+    color: #fff;
+}
+
+.contain .box:hover{
+    background: #f1c40f;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.contain .box img{
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.contain .box h2{
+    font-weight: 600;
+    font-size: larger;
+}
+
+.contain .box p{
+    font-weight: 600;
+    font-size: large;
+}
+
+.modal-content{
+    background: #258f51;
+}

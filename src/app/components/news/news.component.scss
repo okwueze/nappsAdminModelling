@@ -1,0 +1,62 @@
+.header .container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background: #258f51;
+    padding: 1rem;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.header .container h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: xx-large;
+    color: white;
+}
+
+.header .container h1, button{
+    margin: .5rem;
+}
+
+.header .container button{
+    font-weight: 600;
+    color: black;
+}
+
+body .container{
+    padding: 2rem;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+.row img, p{
+    width: 100%;
+    align-items: center;
+}
+
+.row img{
+    border-radius: .7rem;
+}
+
+.row button{
+    color: black;
+    transition: all .5s ease;
+    font-weight: 700;
+}
+
+.row button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.row{
+    padding: 1.4rem;
+    border-bottom: 1px solid rgb(138, 122, 122);
+}
+
+
+
+
+.modal-content{
+    background: #258f51;
+}
